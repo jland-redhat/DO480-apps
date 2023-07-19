@@ -92,7 +92,7 @@ spec:
           value: mypa55
         - name: MYSQL_DATABASE
           value: items
-        image: registry.redhat.io/rhel8/mysql-80:latest
+        image: registry.redhat.io/rhel8/mysql-80:1521111
         name: mysql
         ports:
         - containerPort: 3306

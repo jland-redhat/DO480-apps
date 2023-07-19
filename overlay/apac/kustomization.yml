@@ -2,3 +2,10 @@ bases:
   - ../../base
 
 nameSuffix: -apac
+
+
+patches:
+  - path: deployment-patch.yaml
+    target:
+      kind: Deployment
+      name: mysql
