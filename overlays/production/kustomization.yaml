@@ -2,3 +2,14 @@ kind: Kustomization
 
 bases:
   - ../../base
+
+resources:
+  - dbclaim-pvc.yaml
+  - route.yaml
+
+namePrefix: dev-
+
+patches:
+  - path: deployment-patch.yaml
+    target: 
+      name: mysql

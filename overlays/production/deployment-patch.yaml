@@ -1,0 +1,10 @@
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  volumes:
+    - name: db-volume
+      persistentVolumeClaim:
+        claimName: mysql-pv-claim
+    - name: db-init
+      emptyDir: {}
